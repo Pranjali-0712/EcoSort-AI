@@ -147,3 +147,16 @@ The application also provides confidence information, top AI predictions, low-co
 - **GitHub** – Source code hosting and project collaboration
 - **VS Code** – Development environment
 
+# 🧠 AI Model
+
+EcoSort AI currently uses the following pre-trained image-classification model:
+
+**Model:** `google/vit-base-patch16-224`
+
+The model is accessed through the Hugging Face Transformers pipeline.
+
+```python
+classifier = pipeline(
+    "image-classification",
+    model="google/vit-base-patch16-224"
+)
