@@ -1,0 +1,9 @@
+backend/.venv/
+frontend/ecosort-frontend/node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.vscode/
+.DS_Store
