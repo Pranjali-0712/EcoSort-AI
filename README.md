@@ -67,7 +67,8 @@ The application also provides confidence information, top AI predictions, low-co
           │
           ▼
  Disposal Recommendation
-## ✨ Key Features
+
+# ✨ Key Features
 
 - 📷 **Image Upload & Camera Capture**  
   Upload a waste image or capture one using a compatible device camera.
@@ -115,6 +116,7 @@ The application also provides confidence information, top AI predictions, low-co
 
 - 📱 **Responsive UI**  
   Designed to provide a user-friendly experience across different screen sizes.
+
 ## 🛠️ Technologies Used
 
 ### Frontend
