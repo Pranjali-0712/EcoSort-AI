@@ -164,3 +164,186 @@ classifier = pipeline(
 The model provides image predictions and confidence scores.
 
 EcoSort AI then uses application-level classification rules to map detected object labels into waste-management categories.
+## 🏗️ System Architecture
+
+EcoSort AI follows a simple client-server architecture where the React frontend communicates with a FastAPI backend for AI-based image analysis.
+
+```text
+┌──────────────────────────────┐
+│          User                │
+│  Upload / Capture Waste      │
+│           Image              │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│       React Frontend         │
+│        (Vite + React)        │
+│                              │
+│ • Image Preview              │
+│ • Upload Interface           │
+│ • Display AI Results         │
+│ • Analysis History           │
+└──────────────┬───────────────┘
+               │
+               │ HTTP POST /analyze
+               ▼
+┌──────────────────────────────┐
+│       FastAPI Backend        │
+│          (Python)            │
+│                              │
+│ • Receive Image              │
+│ • Process Image with Pillow  │
+│ • Run AI Classification      │
+│ • Generate Waste Category    │
+│ • Provide Recommendation     │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│   Hugging Face Transformers  │
+│                              │
+│ Vision Transformer (ViT)     │
+│ google/vit-base-patch16-224  │
+│                              │
+│ • Detects Image Label        │
+│ • Generates Confidence Score │
+│ • Returns Top Predictions    │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│     Rule-Based Mapping       │
+│                              │
+│ Detected Item → Waste Type   │
+│                              │
+│ ♻️ Recyclable                │
+│ 🍌 Organic Waste             │
+│ 💻 E-Waste                   │
+│ ⚠️ Hazardous Waste           │
+│ 🗑️ General Waste             │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│       Result to User         │
+│                              │
+│ • Detected Item              │
+│ • Confidence Score           │
+│ • Waste Category             │
+│ • Disposal Recommendation    │
+│ • Top Predictions            │
+│ • Low-Confidence Warning     │
+└──────────────────────────────┘
+
+## 📁 Project Structure
+```
+EcoSort-AI/
+│
+├── backend/
+│   ├── main.py
+│   └── ...
+│
+├── frontend/
+│   └── ecosort-frontend/
+│       ├── src/
+│       │   ├── App.jsx
+│       │   ├── App.css
+│       │   └── ...
+│       ├── public/
+│       ├── package.json
+│       └── ...
+│
+├── .gitignore
+└── README.md
+```
+##⚙️ Installation and Setup
+Prerequisites
+
+Make sure the following are installed:
+
+Python 3.11
+Node.js
+npm
+Git
+##🔧 Backend Setup
+
+Open PowerShell and navigate to the backend:
+```
+cd EcoSort-AI\backend
+```
+Create a Python virtual environment:
+```
+python -m venv .venv
+```
+Activate the environment:
+```
+.\.venv\Scripts\Activate.ps1
+```
+Install the required packages:
+```
+pip install fastapi uvicorn python-multipart pillow transformers torch torchvision
+```
+Start the backend:
+```
+uvicorn main:app
+```
+The backend will run at:
+```
+http://127.0.0.1:8000
+```
+### 💻 Frontend Setup
+
+Open a new terminal.
+
+Navigate to the frontend:
+```
+cd EcoSort-AI\frontend\ecosort-frontend
+```
+Install dependencies:
+```
+npm install
+```
+Start the development server:
+```
+npm run dev
+```
+The frontend will normally be available at:
+```
+http://localhost:5173
+```
+ ##🔗 API Endpoints
+GET /
+
+Checks whether the backend is running.
+
+Example response:
+```
+{
+  "message": "EcoSort AI Backend is Running!"
+}
+```
+GET /health
+
+Health-check endpoint.
+
+Example response:
+
+{
+  "status": "healthy"
+}
+POST /analyze
+
+Accepts an uploaded image and performs AI image classification.
+
+Example response:
+
+{
+  "filename": "waste.jpg",
+  "detected_item": "plastic bottle",
+  "confidence": "85.24%",
+  "warning": "AI prediction confidence is good.",
+  "category": "Recyclable",
+  "recommendation": "Clean the item and place it in an appropriate recycling bin.",
+  "all_predictions": []
+}
