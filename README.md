@@ -160,3 +160,7 @@ classifier = pipeline(
     "image-classification",
     model="google/vit-base-patch16-224"
 )
+```
+The model provides image predictions and confidence scores.
+
+EcoSort AI then uses application-level classification rules to map detected object labels into waste-management categories.
