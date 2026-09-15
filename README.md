@@ -257,94 +257,22 @@ EcoSort-AI/
 ├── .gitignore
 └── README.md
 ```
-**⚙️ Installation and Setup**
+# ⚙️ Installation and Setup
 
-Prerequisites
+## Prerequisites
 
 Make sure the following are installed:
 
-Python 3.11
-Node.js
-npm
-Git
-**🔧 Backend Setup**
+- Python 3.11
+- Node.js
+- npm
+- Git
+
+---
+
+# 🔧 Backend Setup
 
 Open PowerShell and navigate to the backend:
-```
+
+```powershell
 cd EcoSort-AI\backend
-```
-Create a Python virtual environment:
-```
-python -m venv .venv
-```
-Activate the environment:
-```
-.\.venv\Scripts\Activate.ps1
-```
-Install the required packages:
-```
-pip install fastapi uvicorn python-multipart pillow transformers torch torchvision
-```
-Start the backend:
-```
-uvicorn main:app
-```
-The backend will run at:
-```
-http://127.0.0.1:8000
-```
-### 💻 Frontend Setup
-
-Open a new terminal.
-
-Navigate to the frontend:
-```
-cd EcoSort-AI\frontend\ecosort-frontend
-```
-Install dependencies:
-```
-npm install
-```
-Start the development server:
-```
-npm run dev
-```
-The frontend will normally be available at:
-```
-http://localhost:5173
-```
- ##🔗 API Endpoints
-GET /
-
-Checks whether the backend is running.
-
-Example response:
-```
-{
-  "message": "EcoSort AI Backend is Running!"
-}
-```
-GET /health
-
-Health-check endpoint.
-
-Example response:
-
-{
-  "status": "healthy"
-}
-POST /analyze
-
-Accepts an uploaded image and performs AI image classification.
-
-Example response:
-
-{
-  "filename": "waste.jpg",
-  "detected_item": "plastic bottle",
-  "confidence": "85.24%",
-  "warning": "AI prediction confidence is good.",
-  "category": "Recyclable",
-  "recommendation": "Clean the item and place it in an appropriate recycling bin.",
-  "all_predictions": []
-}
