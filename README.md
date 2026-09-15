@@ -235,7 +235,7 @@ EcoSort AI follows a simple client-server architecture where the React frontend 
 │ • Top Predictions            │
 │ • Low-Confidence Warning     │
 └──────────────────────────────┘
-
+```
 ## 📁 Project Structure
 ```
 EcoSort-AI/
@@ -257,7 +257,8 @@ EcoSort-AI/
 ├── .gitignore
 └── README.md
 ```
-##⚙️ Installation and Setup
+**⚙️ Installation and Setup**
+
 Prerequisites
 
 Make sure the following are installed:
@@ -266,7 +267,7 @@ Python 3.11
 Node.js
 npm
 Git
-##🔧 Backend Setup
+**🔧 Backend Setup**
 
 Open PowerShell and navigate to the backend:
 ```
