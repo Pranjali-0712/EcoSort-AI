@@ -117,7 +117,7 @@ The application also provides confidence information, top AI predictions, low-co
 
 - 📱 **Responsive UI**  
   Provides a user-friendly interface across different screen sizes.
-  ```
+  
    ## 🛠️ Technologies Used
 
 ### 🎨 Frontend
