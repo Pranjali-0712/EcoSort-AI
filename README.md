@@ -146,4 +146,4 @@ The application also provides confidence information, top AI predictions, low-co
 - **Git** – Version control
 - **GitHub** – Source code hosting and project collaboration
 - **VS Code** – Development environment
-```
+
