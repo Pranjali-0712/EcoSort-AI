@@ -117,3 +117,33 @@ The application also provides confidence information, top AI predictions, low-co
 
 - 📱 **Responsive UI**  
   Provides a user-friendly interface across different screen sizes.
+  ```
+   ## 🛠️ Technologies Used
+
+### 🎨 Frontend
+- **React.js** – Building the interactive user interface
+- **Vite** – Frontend development and build tool
+- **JavaScript (ES6+)** – Application logic and API integration
+- **HTML5** – Web page structure
+- **CSS3** – Responsive and modern UI design
+
+### ⚙️ Backend
+- **Python** – Backend programming
+- **FastAPI** – Building the REST API
+- **Uvicorn** – Running the FastAPI server
+- **Pillow (PIL)** – Image processing and conversion
+
+### 🤖 Artificial Intelligence
+- **Hugging Face Transformers** – AI model integration
+- **Vision Transformer (ViT)** – Image classification
+- **Google ViT Base Patch16 224** – Pre-trained image-classification model
+- **Model:** `google/vit-base-patch16-224`
+
+### 💾 Storage
+- **Browser LocalStorage** – Storing analysis history locally
+
+### 🔧 Development Tools
+- **Git** – Version control
+- **GitHub** – Source code hosting and project collaboration
+- **VS Code** – Development environment
+```
