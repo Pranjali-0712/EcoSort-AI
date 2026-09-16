@@ -443,23 +443,23 @@ AI-Powered Waste Classification
 
 ---
 
-# 🖼️ Application Screenshots
+# 📸 Application Screenshots
 
-### 🏠 Home Page
+## 🏠 Home / Upload Screen
 
-_Add your home page screenshot here._
+![EcoSort AI Home Screen](screenshots/home.png)
 
-### 📷 Image Upload
+## 🤖 AI Analysis Result
 
-_Add your image upload screenshot here._
+![EcoSort AI Analysis Result](screenshots/analysis-result.png)
 
-### 🤖 AI Analysis Result
+## 📜 Analysis History
 
-_Add your AI result screenshot here._
+![EcoSort AI Analysis History](screenshots/history.png)
 
-### 📜 Analysis History
+## 🌱 Sustainability Section
 
-_Add your history screenshot here._
+![EcoSort AI Sustainability](screenshots/sustainability.png)
 
 ---
 
