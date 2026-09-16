@@ -570,3 +570,20 @@ Documentation
         ↓
 Final Project
 ```
+# 👩‍💻 Author
+
+## Pranjali Tiwari
+
+**B.E. Computer Science and Engineering**
+
+---
+
+# 🏆 Internship Project
+
+This project was developed as part of the:
+
+**1M1B AI for Sustainability Virtual Internship**
+
+The project explores how **Artificial Intelligence** can be applied to a real-world sustainability challenge by helping users identify waste and understand responsible disposal practices.
+
+---
