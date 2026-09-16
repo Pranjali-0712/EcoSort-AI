@@ -317,3 +317,40 @@ The frontend will normally be available at:
 ```
 http://localhost:5173
 ```
+# 🔗 API Endpoints
+## 🏠 GET `/`
+
+Checks whether the backend is running.
+
+Example Response
+```
+{
+  "message": "EcoSort AI Backend is Running!"
+}
+```
+## GET /health
+
+Health-check endpoint.
+
+Example Response
+```
+{
+  "status": "healthy"
+}
+```
+## POST /analyze
+
+Accepts an uploaded image and performs AI image classification.
+
+Example Response
+```
+{
+  "filename": "waste.jpg",
+  "detected_item": "plastic bottle",
+  "confidence": "85.24%",
+  "warning": "AI prediction confidence is good.",
+  "category": "Recyclable",
+  "recommendation": "Clean the item and place it in an appropriate recycling bin.",
+  "all_predictions": []
+}
+```
