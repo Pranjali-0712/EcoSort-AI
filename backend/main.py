@@ -23,9 +23,8 @@ print("Loading AI model... Please wait.")
 
 classifier = pipeline(
     "image-classification",
-    model="google/vit-base-patch16-224"
+    model="WinKawaks/vit-tiny-patch16-224"
 )
-
 print("AI model loaded successfully!")
 
 
