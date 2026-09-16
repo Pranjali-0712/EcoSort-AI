@@ -276,3 +276,24 @@ Open PowerShell and navigate to the backend:
 
 ```powershell
 cd EcoSort-AI\backend
+```
+Create a Python virtual environment:
+```
+python -m venv .venv
+```
+Activate the environment:
+```
+.\.venv\Scripts\Activate.ps1
+```
+Install the required packages:
+```
+pip install -r requirements.txt
+```
+Start the backend:
+```
+uvicorn main:app
+```
+The backend will run at:
+```
+http://127.0.0.1:8000
+```
