@@ -35,3 +35,84 @@ main{grid-template-columns:1fr;padding:25px 15px}
 header h1{font-size:2.3rem}
 .upload-card,.result-card,.history-card{padding:22px}
 }
+.upload-description {
+  text-align: center;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 10px auto 20px;
+  max-width: 500px;
+}
+
+.upload-area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 270px;
+  margin: 22px 0;
+  padding: 35px 25px;
+  border: 1.5px dashed #86cfa1;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #f8fffa, #f0faf3);
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.upload-area:hover {
+  border-color: #16a34a;
+  background: #ecfdf3;
+  transform: translateY(-2px);
+}
+
+.upload-circle {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.upload-area h3 {
+  margin: 0;
+  color: #14532d;
+  font-size: 20px;
+}
+
+.upload-area p {
+  margin: 8px 0;
+  max-width: 320px;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.upload-format {
+  margin-bottom: 18px;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.choose-image {
+  padding: 11px 24px;
+  border-radius: 9px;
+  background: #15803d;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(21, 128, 61, 0.2);
+}
+
+.choose-image:hover {
+  background: #166534;
+}
+
+.upload-area input {
+  display: none;
+}

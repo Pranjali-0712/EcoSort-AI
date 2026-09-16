@@ -83,33 +83,53 @@ function App() {
       <main>
 
         <div className="upload-card">
-          <h2>📷 Upload Waste Image</h2>
-          <p>Upload an image of a waste item and let AI identify it.</p>
+  <h2>♻️ Waste Image Analysis</h2>
 
-          <label className="camera-button">
-            📷 Take Photo or Upload Image
-            <input
-              type="file"
-              accept="image/*"
-              capture="environment"
-              onChange={handleFileChange}
-            />
-          </label>
+  <p className="upload-description">
+    Upload an image of a waste item to identify its category
+    and receive a disposal recommendation.
+  </p>
 
-          {preview && (
-            <img
-              src={preview}
-              alt="Selected waste"
-              className="preview-image"
-            />
-          )}
+  <label className="upload-area">
+    <div className="upload-circle">↑</div>
 
-          <button onClick={analyzeWaste} disabled={loading}>
-            {loading ? "🤖 AI is Analyzing..." : "🤖 Analyze Waste"}
-          </button>
+    <h3>Upload a waste image</h3>
 
-          {error && <p className="error">{error}</p>}
-        </div>
+    <p>
+      Choose an image from your device or capture one using your camera.
+    </p>
+
+    <span className="upload-format">
+      JPG, PNG or WEBP
+    </span>
+
+    <span className="choose-image">
+      Choose Image
+    </span>
+
+    <input
+      type="file"
+      accept="image/*"
+      capture="environment"
+      onChange={handleFileChange}
+    />
+  </label>
+
+  {preview && (
+    <img
+      src={preview}
+      alt="Selected waste"
+      className="preview-image"
+    />
+  )}
+
+  <button
+    onClick={analyzeWaste}
+    disabled={!selectedFile || loading}
+  >
+    {loading ? "Analyzing..." : "Analyze Image"}
+  </button>
+</div>
 
         {result && (
           <div className="result-card">
