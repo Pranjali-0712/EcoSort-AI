@@ -432,3 +432,141 @@ AI-Powered Waste Classification
               ↓
            SDG 12
 ```
+# 📊 Sustainability Dashboard
+
+| Area | Description |
+|---|---|
+| 🤖 AI Powered | Image-based waste identification |
+| ♻️ 5 Categories | Recyclable, Organic, E-Waste, Hazardous and General Waste |
+| 🎯 SDG 12 | Responsible Consumption and Production |
+| 🌍 Sustainable Action | Encouraging responsible waste disposal |
+
+---
+
+# 🖼️ Application Screenshots
+
+### 🏠 Home Page
+
+_Add your home page screenshot here._
+
+### 📷 Image Upload
+
+_Add your image upload screenshot here._
+
+### 🤖 AI Analysis Result
+
+_Add your AI result screenshot here._
+
+### 📜 Analysis History
+
+_Add your history screenshot here._
+
+---
+
+# 🧪 Testing
+
+EcoSort AI can be tested using clear images containing a single main object.
+
+| Test Item | Expected Category |
+|---|---|
+| Plastic Bottle | ♻️ Recyclable |
+| Banana / Food Waste | 🍌 Organic Waste |
+| Old Mobile Phone | 💻 E-Waste |
+| Metal Can | ♻️ Recyclable |
+| Paper / Cardboard | ♻️ Recyclable |
+
+> Results depend on the AI model's prediction. The application provides confidence information, and users should verify uncertain results.
+
+---
+
+# ⚠️ Limitations
+
+- The application uses a general-purpose pre-trained image-classification model.
+- The model is not specifically trained for waste classification.
+- Waste categories are assigned using rule-based keyword mapping.
+- AI predictions may be incorrect for unclear or unfamiliar images.
+- Confidence scores should not be treated as guaranteed accuracy.
+- Disposal recommendations may vary according to local regulations.
+- Internet access may be required when the model is downloaded for the first time.
+
+---
+
+# 🔮 Future Enhancements
+
+- Train or fine-tune a waste-specific image classification model
+- Add more waste categories
+- Improve waste detection for multiple objects in one image
+- Add multilingual support
+- Add location-based disposal guidelines
+- Add a map of nearby recycling and e-waste collection centers
+- Add cloud-based user history
+- Improve accessibility and mobile support
+- Add analytics for waste classification trends
+
+---
+
+# 🔐 Privacy and Security
+
+EcoSort AI is designed to minimize unnecessary collection of personal information.
+
+- No personal information is required for basic image analysis.
+- Analysis history is stored locally in the user's browser.
+- Users should avoid uploading images containing sensitive personal information.
+- Disposal decisions should be verified using trusted local guidelines.
+
+---
+
+# 🎯 Project Objectives
+
+- Develop an AI-powered waste identification system.
+- Make waste segregation easier for users.
+- Encourage responsible disposal practices.
+- Promote awareness about recycling and e-waste.
+- Apply AI and computer vision to a real-world environmental problem.
+- Support UN SDG 12.
+
+---
+
+# 📚 Learning Outcomes
+
+Through this project, the following skills were developed:
+
+- React.js frontend development
+- FastAPI backend development
+- REST API integration
+- Python programming
+- Image processing using Pillow
+- AI model integration using Hugging Face Transformers
+- Vision Transformer concepts
+- Git and GitHub
+- Responsible AI practices
+- Problem solving and debugging
+- Sustainable technology development
+
+---
+
+# 🚀 Development Flow
+
+```text
+Problem Identification
+        ↓
+Sustainability Goal Selection
+        ↓
+Solution Design
+        ↓
+Frontend Development
+        ↓
+Backend API Development
+        ↓
+AI Model Integration
+        ↓
+Waste Category Mapping
+        ↓
+Testing
+        ↓
+Responsible AI Improvements
+        ↓
+Documentation
+        ↓
+Final Project
+```
