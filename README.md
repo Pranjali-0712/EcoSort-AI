@@ -351,3 +351,84 @@ Accepts an uploaded image and performs AI image classification.
   "all_predictions": []
 }
 ```
+# ⚖️ Responsible AI Considerations
+
+EcoSort AI incorporates responsible AI principles into the user experience.
+
+## 🔍 Transparency
+
+The application displays the detected item and confidence score so users can understand the AI prediction.
+
+## ⚠️ Uncertainty
+
+Low-confidence predictions are clearly identified so users know that the result may require manual verification.
+
+## 👤 Human Oversight
+
+Users can select a corrected waste category when they believe the AI classification is incorrect.
+
+## ⚖️ Fairness
+
+The system should be tested using diverse images, backgrounds, lighting conditions, and waste items to identify potential weaknesses.
+
+## 🔒 Privacy
+
+Users should avoid uploading images containing unnecessary personal or sensitive information.
+
+## 🌍 Environmental Responsibility
+
+The application encourages users to verify disposal decisions with local waste-management guidelines, particularly for hazardous materials and electronic waste.
+
+---
+
+# 🌱 Sustainability Impact
+
+EcoSort AI aims to contribute to better waste-management awareness by making waste identification easier.
+
+### Potential Benefits
+
+- ♻️ Improving awareness of waste segregation
+- ♻️ Encouraging recycling
+- 🌱 Supporting composting awareness
+- 💻 Increasing awareness of e-waste
+- 🗑️ Promoting responsible disposal
+- 🌍 Encouraging sustainable consumption practices
+- 🤖 Demonstrating the use of AI for environmental challenges
+
+---
+
+# 🌍 UN Sustainable Development Goal
+
+## SDG 12 — Responsible Consumption and Production
+
+EcoSort AI primarily supports **SDG 12: Responsible Consumption and Production**.
+
+### ♻️ Responsible Waste Management
+
+Helping users understand different waste categories and appropriate disposal actions.
+
+### 🌱 Sustainable Practices
+
+Encouraging responsible decisions regarding everyday waste.
+
+### 📚 Environmental Awareness
+
+Using an interactive AI application to improve understanding of waste segregation.
+
+---
+
+### 🎯 SDG 12 Connection
+
+```text
+AI-Powered Waste Classification
+              ↓
+       Better Awareness
+              ↓
+      Proper Segregation
+              ↓
+    Responsible Disposal
+              ↓
+ Sustainable Consumption
+              ↓
+           SDG 12
+```
