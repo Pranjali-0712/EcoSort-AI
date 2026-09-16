@@ -321,8 +321,7 @@ http://localhost:5173
 ## 🏠 GET `/`
 
 Checks whether the backend is running.
-
-Example Response
+### **Example Response**
 ```
 {
   "message": "EcoSort AI Backend is Running!"
@@ -331,8 +330,7 @@ Example Response
 ## GET /health
 
 Health-check endpoint.
-
-Example Response
+### **Example Response**
 ```
 {
   "status": "healthy"
@@ -341,8 +339,7 @@ Example Response
 ## POST /analyze
 
 Accepts an uploaded image and performs AI image classification.
-
-Example Response
+### **Example Response**
 ```
 {
   "filename": "waste.jpg",
