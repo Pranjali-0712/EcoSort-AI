@@ -297,3 +297,23 @@ The backend will run at:
 ```
 http://127.0.0.1:8000
 ```
+# 💻 Frontend Setup
+
+Open a new terminal.
+
+Navigate to the frontend:
+```
+cd EcoSort-AI\frontend\ecosort-frontend
+```
+Install dependencies:
+```
+npm install
+```
+Start the development server:
+```
+npm run dev
+```
+The frontend will normally be available at:
+```
+http://localhost:5173
+```
