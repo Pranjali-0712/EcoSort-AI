@@ -69,6 +69,18 @@ The application also provides confidence information, top AI predictions, low-co
  Disposal Recommendation
 
 ```
+
+## 🚀 Live Demo
+
+🌐 **Live Application:**  
+https://eco-sort-jq1c1w82b-pranjali-0712s-projects.vercel.app/
+
+The application is deployed using:
+
+- **Frontend:** Vercel
+- **Backend:** Render
+- **Source Code:** GitHub
+---
 ## ✨ Key Features
 
 - 📷 **Image Upload & Camera Capture**  
@@ -136,8 +148,8 @@ The application also provides confidence information, top AI predictions, low-co
 ### 🤖 Artificial Intelligence
 - **Hugging Face Transformers** – AI model integration
 - **Vision Transformer (ViT)** – Image classification
-- **Google ViT Base Patch16 224** – Pre-trained image-classification model
-- **Model:** `google/vit-base-patch16-224`
+- **ViT-Tiny** – Lightweight pre-trained image-classification model
+- **Model:** `WinKawaks/vit-tiny-patch16-224`
 
 ### 💾 Storage
 - **Browser LocalStorage** – Storing analysis history locally
@@ -146,19 +158,18 @@ The application also provides confidence information, top AI predictions, low-co
 - **Git** – Version control
 - **GitHub** – Source code hosting and project collaboration
 - **VS Code** – Development environment
-
 # 🧠 AI Model
 
-EcoSort AI currently uses the following pre-trained image-classification model:
+EcoSort AI uses a pre-trained Vision Transformer (ViT) image-classification model from Hugging Face.
 
-**Model:** `google/vit-base-patch16-224`
+**Model:** `WinKawaks/vit-tiny-patch16-224`
 
 The model is accessed through the Hugging Face Transformers pipeline.
 
 ```python
 classifier = pipeline(
     "image-classification",
-    model="google/vit-base-patch16-224"
+    model="WinKawaks/vit-tiny-patch16-224"
 )
 ```
 The model provides image predictions and confidence scores.
@@ -202,9 +213,8 @@ EcoSort AI follows a simple client-server architecture where the React frontend 
                ▼
 ┌──────────────────────────────┐
 │   Hugging Face Transformers  │
-│                              │
-│ Vision Transformer (ViT)     │
-│ google/vit-base-patch16-224  │
+│ Vision Transformer (ViT)     |
+|WinKawaks/vit-tiny-patch16-224│
 │                              │
 │ • Detects Image Label        │
 │ • Generates Confidence Score │
@@ -238,11 +248,15 @@ EcoSort AI follows a simple client-server architecture where the React frontend 
 ```
 ## 📁 Project Structure
 ```
+## 📁 Project Structure
+
+```text
 EcoSort-AI/
 │
 ├── backend/
 │   ├── main.py
-│   └── ...
+│   ├── requirements.txt
+│   └── .python-version
 │
 ├── frontend/
 │   └── ecosort-frontend/
@@ -252,11 +266,35 @@ EcoSort-AI/
 │       │   └── ...
 │       ├── public/
 │       ├── package.json
-│       └── ...
+│       └── vite.config.js
+│
+├── screenshots/
+│   ├── home.png
+│   ├── analysis-result.png
+│   ├── history.png
+│   └── sustainability.png
 │
 ├── .gitignore
 └── README.md
 ```
+# 🚀 Deployment
+
+EcoSort AI is deployed using a separate frontend and backend architecture.
+
+### Frontend
+- Platform: Vercel
+- Framework: React + Vite
+- Build Command: `npm run build`
+- Output Directory: `dist`
+
+### Backend
+- Platform: Render
+- Framework: FastAPI
+- Python Version: 3.11
+- Start Command:
+
+```bash
+uvicorn main:app --host 0.0.0.0 --port $PORT
 # ⚙️ Installation and Setup
 
 ## Prerequisites
@@ -465,7 +503,7 @@ AI-Powered Waste Classification
 
 # 🧪 Testing
 
-EcoSort AI can be tested using clear images containing a single main object.
+EcoSort AI was tested using clear images containing a single main object.
 
 | Test Item | Expected Category |
 |---|---|
@@ -475,7 +513,7 @@ EcoSort AI can be tested using clear images containing a single main object.
 | Metal Can | ♻️ Recyclable |
 | Paper / Cardboard | ♻️ Recyclable |
 
-> Results depend on the AI model's prediction. The application provides confidence information, and users should verify uncertain results.
+> Results depend on the AI model's prediction. The expected category represents the intended application-level classification. Users should verify uncertain results and follow local waste-management guidelines.
 
 ---
 
