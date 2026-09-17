@@ -129,8 +129,8 @@ The application is deployed using:
 
 - 📱 **Responsive UI**  
   Provides a user-friendly interface across different screen sizes.
-  
-   ## 🛠️ Technologies Used
+
+## 🛠️ Technologies Used
 
 ### 🎨 Frontend
 - **React.js** – Building the interactive user interface
@@ -356,7 +356,7 @@ The frontend will normally be available at:
 http://localhost:5173
 ```
 # 🔗 API Endpoints
-## 🏠 GET `/`
+##  GET `/`
 
 Checks whether the backend is running.
 ### **Example Response**
