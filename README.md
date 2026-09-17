@@ -295,6 +295,7 @@ EcoSort AI is deployed using a separate frontend and backend architecture.
 
 ```bash
 uvicorn main:app --host 0.0.0.0 --port $PORT
+```
 # ⚙️ Installation and Setup
 
 ## Prerequisites
